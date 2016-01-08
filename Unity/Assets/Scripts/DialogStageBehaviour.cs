@@ -54,7 +54,6 @@ public class DialogStageBehaviour : MonoBehaviour
 
 		var style = new GUIStyle(EditorStyles.boldLabel);
 		style.fontSize = (int) (50/Camera.current.orthographicSize);
-		Debug.Log(style.fontSize);
 
 		Handles.Label(transform.position, Stage.Name, style);
 	}

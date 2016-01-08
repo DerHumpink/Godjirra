@@ -7,7 +7,6 @@ namespace Editor
 	[CustomEditor(typeof (ParameterSetup))]
 	public class ParameterSetupInspector : UnityEditor.Editor
 	{
-		private bool _unlockIds;
 		private bool[] foldoutStatus;
 
 		private readonly string[] ParameterTypes = {"Number", "Boolean"};
@@ -54,18 +53,7 @@ namespace Editor
 
 		private void SetID(Parameter parameter, ParameterSetup parameterSetup)
 		{
-			if (!_unlockIds)
-			{
 				EditorGUILayout.LabelField("ID: " + parameter.Id, GUILayout.Width(45));
-			}
-			else
-			{
-				var id = EditorGUILayout.IntField(parameter.Id, GUILayout.Width(45));
-				if (parameterSetup.Parameters.Any(p => p.Id == id))
-					return;
-
-				parameter.Id = id;
-			}
 		}
 
 		private void SetType(Parameter parameter)

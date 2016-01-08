@@ -1,5 +1,6 @@
 ﻿using Editor;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 [CustomEditor(typeof (DialogStageBehaviour))]
@@ -7,7 +8,9 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 {
 	public override void OnInspectorGUI()
 	{
+		Undo.RecordObject(target, "Zero Transform Position");
 		var stage = (target as DialogStageBehaviour).Stage;
+		var stageBehaviour = (target as DialogStageBehaviour);
 
 		//Name
 		GUILayout.Label("Stage Name");
@@ -35,6 +38,7 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 		if (GUI.changed)
 		{
 			EditorUtility.SetDirty(target);
+			Undo.RecordObject(target, "Zero Transform Position");
 		}
 	}
 
@@ -80,14 +84,14 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 				var condition = answer.Conditions[i];
 
 				//Select Parameter
-				var selection = ParameterSetup.Instance.GetParameterIndexById(condition.parameterID);
+				var selection = ParameterSetup.Instance.GetParameterIndexById(condition.ParameterId);
 				selection = EditorGUILayout.Popup(selection, ParameterSetup.Instance.GetAllParameterNames(), GUILayout.Width(200));
-				condition.parameterID = ParameterSetup.Instance.GetParameterIdByIndex(selection);
+				condition.ParameterId = ParameterSetup.Instance.GetParameterIdByIndex(selection);
 
 				EditorGUI.indentLevel -= 2;
 				condition.Operator = (CompareFunction) EditorGUILayout.EnumPopup(condition.Operator, GUILayout.Width(60));
 
-				if (ParameterSetup.Instance.GetParameterById(condition.parameterID).Type == ParameterType.Boolean)
+				if (ParameterSetup.Instance.GetParameterById(condition.ParameterId).Type == ParameterType.Boolean)
 				{
 					condition.Value = EditorGUILayout.ToggleLeft("value", condition.Value > 0, GUILayout.Width(100)) ? 1 : 0;
 				}
@@ -130,14 +134,14 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 				var effect = answer.Effects[i];
 
 				//Select Parameter
-				var selection = ParameterSetup.Instance.GetParameterIndexById(effect.parameterID);
+				var selection = ParameterSetup.Instance.GetParameterIndexById(effect.ParameterId);
 				selection = EditorGUILayout.Popup(selection, ParameterSetup.Instance.GetAllParameterNames(), GUILayout.Width(200));
-				effect.parameterID = ParameterSetup.Instance.GetParameterIdByIndex(selection);
+				effect.ParameterId = ParameterSetup.Instance.GetParameterIdByIndex(selection);
 
 				EditorGUI.indentLevel -= 2;
 				effect.Operator = (Operator) EditorGUILayout.EnumPopup(effect.Operator, GUILayout.Width(60));
 
-				if (ParameterSetup.Instance.GetParameterById(effect.parameterID).Type == ParameterType.Boolean)
+				if (ParameterSetup.Instance.GetParameterById(effect.ParameterId).Type == ParameterType.Boolean)
 				{
 					effect.Value = EditorGUILayout.ToggleLeft("value", effect.Value > 0, GUILayout.Width(100)) ? 1 : 0;
 				}
