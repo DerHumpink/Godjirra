@@ -4,7 +4,7 @@ using Editor;
 using UnityEngine;
 
 
-public class DialogTree : SetupObject<DialogTree>
+public class DialogTreeSetup : SetupObject<DialogTreeSetup>
 {
 	public List<DialogStage> Stages = new List<DialogStage>();
 	public int FistStageId;

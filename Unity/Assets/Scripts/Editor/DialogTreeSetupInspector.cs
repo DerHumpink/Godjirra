@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace Editor
 {
-	[CustomEditor(typeof(DialogTree))]
+	[CustomEditor(typeof(DialogTreeSetup))]
 	public class DialogTreeInspector : UnityEditor.Editor
 	{
 		public override void OnInspectorGUI()
 		{
-			DialogTree tree=target as DialogTree;
+			DialogTreeSetup tree =target as DialogTreeSetup;
 
 			EditorGUILayout.LabelField("Dialog Tree Settings",EditorStyles.boldLabel);
 			EditorGUILayout.HelpBox("This container object is carrying data into the game mode",MessageType.Info);
@@ -33,7 +33,7 @@ namespace Editor
 			}
 		}
 
-		private static void SetFirstStage(DialogTree tree)
+		private static void SetFirstStage(DialogTreeSetup tree)
 		{
 			if (DialogStageBehaviour.AllBehaviours.Length > 0)
 			{

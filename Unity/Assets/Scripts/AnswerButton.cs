@@ -11,7 +11,7 @@ public class AnswerButton : MonoBehaviour
 	{
 		_answer = answer;
 		GetComponentInChildren<Text>().text = answer.Text;
-		Button button = GetComponent<Button>();
+		var button = GetComponent<Button>();
 		button.onClick.AddListener(OnClicked);
 		button.interactable = AreConditionsFullfilled(answer.Conditions);
 	}
@@ -23,6 +23,10 @@ public class AnswerButton : MonoBehaviour
 
 	private void OnClicked()
 	{
+		foreach (var effect in _answer.Effects)
+		{
+			effect.Apply();
+		}
 		GameManager.Instance.OnAnswerSelected(_answer);
 	}
 }

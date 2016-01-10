@@ -1,6 +1,4 @@
-﻿using Editor;
-using UnityEditor;
-using UnityEditor.SceneManagement;
+﻿using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof (DialogStageBehaviour))]
@@ -10,7 +8,6 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 	{
 		Undo.RecordObject(target, "Zero Transform Position");
 		var stage = (target as DialogStageBehaviour).Stage;
-		var stageBehaviour = (target as DialogStageBehaviour);
 
 		//Name
 		GUILayout.Label("Stage Name");
@@ -44,7 +41,16 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 
 	private void InspectAnswer(Answer answer, DialogStage stage)
 	{
+		GUILayout.BeginHorizontal();
 		GUILayout.Label("----------------ANSWER--------------", EditorStyles.boldLabel);
+		GUI.color = new Color(0.9f, 0.7f, 0.7f);
+		if (GUILayout.Button("X", GUILayout.Width(25)))
+		{
+			stage.Answers.Remove(answer);
+			return;
+		}
+		GUILayout.EndHorizontal();
+
 		EditorGUI.indentLevel++;
 		GUI.color = new Color(0.6f, 0.9f, 0.6f);
 		answer.Text = EditorGUILayout.TextField(answer.Text);
@@ -178,11 +184,11 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 			answer.NextStageId = -1;
 			if (GUILayout.Button("Create Stage"))
 			{
-				GameObject go=new GameObject();
-				go.transform.position=(target as MonoBehaviour).transform.position+Vector3.right*2;
-				DialogStageBehaviour stageBehaviour = go.AddComponent<DialogStageBehaviour>();
+				var go = new GameObject();
+				go.transform.position = (target as MonoBehaviour).transform.position + Vector3.right*2;
+				var stageBehaviour = go.AddComponent<DialogStageBehaviour>();
 				stageBehaviour.RefreshId();
-				answer.NextStageId=stageBehaviour.Stage.Id;
+				answer.NextStageId = stageBehaviour.Stage.Id;
 			}
 		}
 		EditorGUILayout.EndHorizontal();

@@ -30,5 +30,5 @@ public class RuntimeParameter
 	public int Id			{ get; private set; }
 	public string Name		{ get; private set; }
 	public ParameterType Type { get; private set; }
-	public int Value		{ get; private set; }
+	public int Value		{ get; set; }
 }

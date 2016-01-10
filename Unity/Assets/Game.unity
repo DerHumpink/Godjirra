@@ -409,6 +409,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 873141406}
   - 114: {fileID: 873141405}
+  - 114: {fileID: 873141407}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -427,11 +428,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65df43c948c839b469e79bb8f0e2eb4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _headerText: {fileID: 259461377}
-  _storyText: {fileID: 1157777868}
-  _answersLayoutGroup: {fileID: 628354067}
   _answerButtonPrefab: {fileID: 22410154, guid: b52ee85ea6aeb244aa0e765bea14e9fe,
     type: 2}
+  _answersLayoutGroup: {fileID: 628354067}
+  _headerText: {fileID: 259461377}
+  _storyText: {fileID: 1157777868}
 --- !u!4 &873141406
 Transform:
   m_ObjectHideFlags: 0
@@ -444,6 +445,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &873141407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873141404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1428e7d59f91143af9c95375773e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968421257
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,9 +608,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BlaBlaBlaBlaBla as as as das d asdas dpoapia po ifposd ifposdi fposd ifpoisd
-    f sdpof isdp fisdpofisdpofisdpofi sd fsdpif psdofisdpoi fsdpofi sdpofi sdpoif
-    ps
+  m_Text: If you see this in play mode, the game did not load correctly :D
 --- !u!222 &1157777869
 CanvasRenderer:
   m_ObjectHideFlags: 0
