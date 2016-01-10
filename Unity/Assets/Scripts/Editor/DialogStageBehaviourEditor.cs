@@ -74,7 +74,7 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 		}
 		EditorGUILayout.EndHorizontal();
 
-		EditorGUILayout.LabelField("Parameter                       -    Operator - Value");
+		EditorGUILayout.LabelField("Parameter                       -    Operator - StartValue");
 		if (answer.Conditions.Count > 0)
 		{
 			for (var i = 0; i < answer.Conditions.Count; i++)
@@ -124,7 +124,7 @@ public class DialogStageBehaviourEditor : UnityEditor.Editor
 		}
 		EditorGUILayout.EndHorizontal();
 
-		EditorGUILayout.LabelField("Parameter                       -    Operator - Value");
+		EditorGUILayout.LabelField("Parameter                       -    Operator - StartValue");
 		if (answer.Effects.Count > 0)
 		{
 			for (var i = 0; i < answer.Effects.Count; i++)

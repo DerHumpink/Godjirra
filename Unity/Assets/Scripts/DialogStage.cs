@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using Editor;
+using UnityEngine;
 
-[Serializable]
-public class DialogTree
+
+public class DialogTree : SetupObject<DialogTree>
 {
 	public List<DialogStage> Stages = new List<DialogStage>();
 	public int FistStageId;
 }
+
 
 [Serializable]
 public class DialogStage

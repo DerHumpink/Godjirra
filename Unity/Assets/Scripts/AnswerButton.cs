@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class AnswerButton : MonoBehaviour
@@ -9,7 +11,14 @@ public class AnswerButton : MonoBehaviour
 	{
 		_answer = answer;
 		GetComponentInChildren<Text>().text = answer.Text;
-		GetComponent<Button>().onClick.AddListener(OnClicked);
+		Button button = GetComponent<Button>();
+		button.onClick.AddListener(OnClicked);
+		button.interactable = AreConditionsFullfilled(answer.Conditions);
+	}
+
+	private bool AreConditionsFullfilled(List<Condition> conditions)
+	{
+		return conditions.All(condition => condition.IsFullfielled());
 	}
 
 	private void OnClicked()

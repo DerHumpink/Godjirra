@@ -18,6 +18,8 @@ namespace Editor
 			if (foldoutStatus == null || foldoutStatus.Length < parameterSetup.Parameters.Count)
 				foldoutStatus = new bool[parameterSetup.Parameters.Count];
 
+			EditorGUILayout.HelpBox("This setup asset is saving parameters used by the game. Do not delete or rename this file",MessageType.Info);
+
 			for (var i = 0; i < parameterSetup.Parameters.Count; i++)
 			{
 				var parameter = parameterSetup.Parameters[i];

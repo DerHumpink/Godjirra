@@ -27,7 +27,7 @@ namespace Editor
 			}
 		}
 
-		public static void Check()
+		public static void CreateIfNotExisting()
 		{
 			//if (Instance == null)
 			//{

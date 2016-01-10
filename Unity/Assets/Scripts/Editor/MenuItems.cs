@@ -12,7 +12,8 @@ namespace Assets.Scripts.Editor
 		[MenuItem("Stuff/CreateSettingsObjects")]
 		private static void DoSomething()
 		{
-			ParameterSetup.Check();
+			ParameterSetup.CreateIfNotExisting();
+			DialogTree.CreateIfNotExisting();
 		}
 
 		[MenuItem("Stuff/SaveSetup")]
