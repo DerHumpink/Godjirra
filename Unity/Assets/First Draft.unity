@@ -85,6 +85,50 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &29390947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 29390949}
+  - 114: {fileID: 29390948}
+  m_Layer: 0
+  m_Name: 8 Inside
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &29390948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29390947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 30
+    Name: 8 Inside
+    Text: text
+--- !u!4 &29390949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29390947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
 --- !u!1 &38584770
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +184,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!1 &43859866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 43859868}
+  - 114: {fileID: 43859867}
+  m_Layer: 0
+  m_Name: 6 Window
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &43859867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43859866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 29
+      Text: "Du versuchst, ungef\xE4hrlich auszusehen und zu kommunizieren, indem
+        du auf den Hinterbeinen hin und her wackelst."
+    Id: 28
+    Name: 6 Window
+    Text: "Du landest schwer, erhebst dich und st\xF6\xDFt gegen das Fenster. Das
+      Klacken weckt die Bewohnerin, die verwirrt ans Fenster tritt."
+--- !u!4 &43859868
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 43859866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
 --- !u!1 &47945732
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +289,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!1 &49671943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 49671945}
+  - 114: {fileID: 49671944}
+  m_Layer: 0
+  m_Name: name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &49671944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49671943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 25
+    Name: name
+    Text: text
+--- !u!4 &49671945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49671943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.75, y: -29.79, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
 --- !u!1 &200005989
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +384,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &283324614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 283324616}
+  - 114: {fileID: 283324615}
+  m_Layer: 0
+  m_Name: 4 Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &283324615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283324614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 27
+      Text: "Du m\xF6chtest dies besser verstehen, dein Gehirn muss mehr wachsen."
+    Id: 26
+    Name: 4 Tree
+    Text: "Auf dem Weg nach oben begegnest du einem Eichh\xF6rnchen, dass immer kleiner
+      zu werden scheint, doch du bel\xE4stigst es nicht weiter. An einem Ast angekommen
+      erkennst du, dass die Wand neben dir nicht nur ein Hindernis ist, sondern einen
+      Eingang hat."
+--- !u!4 &283324616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283324614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
 --- !u!1 &286003780
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +596,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &407971203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 407971205}
+  - 114: {fileID: 407971204}
+  m_Layer: 0
+  m_Name: 7 Open
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &407971204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407971203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 30
+      Text: "Du wartest geduldig und streckst dich ihr entgegen. Du bleibst behutsam
+        und zeigst intelligenz, wann m\xF6glich."
+    Id: 29
+    Name: 7 Open
+    Text: "Das M\xE4dchen ist verwirrt, aber nicht verschreckt. Sie \xF6ffnet das
+      Fenster einen Spalt weit."
+--- !u!4 &407971205
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407971203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
 --- !u!1 &562156613
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +810,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &857589084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 857589086}
+  - 114: {fileID: 857589085}
+  m_Layer: 0
+  m_Name: 5 Up Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &857589085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857589084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 28
+      Text: Lass dich von einem hohen Ast auf die Fensterbank fallen und versuch,
+        dich bemerkbar zu machen.
+    Id: 27
+    Name: 5 Up Tree
+    Text: "Im Inneren sind Dinge, die nicht gewachsen sind, und ein gro\xDFes liegendes
+      Tier. Du frisst dich weiter am Baum hoch, um f\xFCr eine weitere Entwicklung
+      bereit zu sein."
+--- !u!4 &857589086
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857589084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+--- !u!1 &882212458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 882212460}
+  - 114: {fileID: 882212459}
+  m_Layer: 0
+  m_Name: 3 Grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882212459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882212458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 24
+      Text: "Du m\xF6chtest klarer denken und sehen k\xF6nnen!"
+    - Conditions: []
+      Effects: []
+      NextStageId: 25
+      Text: "Du m\xF6chtest die Tiere um dich herum Leiten k\xF6nnen."
+    Id: 23
+    Name: 3 Grass
+    Text: "Du grast den Bereich um dich ab, bis nur noch trockener Boden \xFCbrig
+      bleibt. Dabei wird dir klar, dass du einfluss darauf haben kannst, was du werden
+      m\xF6chtest."
+--- !u!4 &882212460
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882212458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.84, y: -28.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
 --- !u!1 &986477963
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +945,7 @@ MonoBehaviour:
   Stage:
     Answers:
     - Conditions:
-      - Operator: 0
+      - Operator: 1
         ParameterId: 0
         Value: 0
       Effects:
@@ -895,6 +1239,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+--- !u!1 &1357551251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1357551253}
+  - 114: {fileID: 1357551252}
+  m_Layer: 0
+  m_Name: 2 Grow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1357551252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357551251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 23
+      Text: "Friss ganze Bl\xE4tter, bis du dich deiner Situation gewachsen f\xFChlst."
+    Id: 22
+    Name: 2 Grow
+    Text: "Du ern\xE4hrst dich m\xFChsam mit Grashalmen und f\xFChlst dich st\xE4rker
+      und gr\xF6\xDFer."
+--- !u!4 &1357551253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1357551251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.84, y: -28.13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
 --- !u!1 &1457861969
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,11 +1375,12 @@ MonoBehaviour:
       Text: Finde hilflose Insekten, um sie zu fressen.
     - Conditions: []
       Effects: []
-      NextStageId: -1
-      Text: text
+      NextStageId: 22
+      Text: Kaue am Rand von Grashalmen.
     Id: 1
     Name: 1Start
-    Text: Du bist ein kleiner Wurm. Tu was mit deinem Leben.
+    Text: Du bist ein kleiner Wurm. Du musst fressen, um zu wachsen, und wirst dabei
+      Eigenschaften deines Futters annehmen.
 --- !u!4 &1536313403
 Transform:
   m_ObjectHideFlags: 0
@@ -994,7 +1388,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1536313401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.67, y: -7.72, z: 0}
+  m_LocalPosition: {x: 11.14, y: -18.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1222,3 +1616,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &1778344236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1778344238}
+  - 114: {fileID: 1778344237}
+  m_Layer: 0
+  m_Name: 4 Garden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1778344237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778344236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 26
+      Text: "Krieche auf den Baum in der N\xE4he, ern\xE4hre dich dabei von Rinde
+        und Bl\xE4ttern"
+    Id: 24
+    Name: 4 Garden
+    Text: "Dein Blick auf die Welt sch\xE4rft sich. Dir wird klar, dass um dich herum
+      eine viel gr\xF6\xDFere Natur wartet, die du erobern kannst."
+--- !u!4 &1778344238
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778344236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23

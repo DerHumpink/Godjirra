@@ -12,122 +12,301 @@ MonoBehaviour:
   m_Name: DialogTreeSetup
   m_EditorClassIdentifier: 
   Stages:
-  - Answers: []
-    Id: 6
-    Name: Karma
-    Text: Bad for you
   - Answers:
     - Conditions: []
       Effects:
-      - Operator: 0
-        ParameterId: 1
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      NextStageId: 17
+      Text: Spring hervor und greif dir alles, was du kannst.
+    Id: 16
+    Name: 13 City Intro
+    Text: "Aus dem Schatten zwischen zwei H\xE4usern beobachtest du eine volle Stra\xDFe
+      mit hell erleuchteten gro\xDFen Scheiben und vielen Passanten."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 7
+      - Operator: 1
+        ParameterId: 0
+        Value: 7
+      NextStageId: 13
+      Text: Durchsuch das Haus nach weiteren Opfern.
+    Id: 12
+    Name: 9 House Victory
+    Text: "Du frisst dich von oben bis unten durch sie durch und l\xE4sst nur Kleidung
+      \xFCbrig. Als du fertig bist, bist du gr\xF6\xDFer als der K\xFCchentisch."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
         Value: 1
-      NextStageId: 3
-      Text: Punch him
+      NextStageId: 4
+      Text: Kneifzangen!
+    Id: 3
+    Name: 3 Choose
+    Text: Dir wachsen kleine Beine. Was noch?
+  - Answers:
     - Conditions: []
       Effects:
-      - Operator: 0
-        ParameterId: 1
-        Value: 0
-      NextStageId: 2
-      Text: Don't punch him
-    - Conditions: []
-      Effects: []
-      NextStageId: 8
-      Text: TestNumbers
-    Id: 1
-    Name: The decision
-    Text: It is 4am. You Skype with Maurice
+      - Operator: 1
+        ParameterId: 0
+        Value: 10
+      - Operator: 1
+        ParameterId: 0
+        Value: 10
+      NextStageId: 15
+      Text: Rampage. Greif alles, was du kannst, und Friss.
+    Id: 14
+    Name: 11 Suburb
+    Text: "Auf der kleinen Stra\xDFe stehen viele H\xE4user wie das, aus dem du kommst.
+      Du siehst einzelne Menschen in Wohnungen und auf Fu\xDFwegen."
   - Answers:
     - Conditions: []
-      Effects: []
-      NextStageId: -1
-      Text: text
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 7
+      - Operator: 1
+        ParameterId: 0
+        Value: 7
+      NextStageId: 12
+      Text: Beiss in ihren Kopf, friss dich durch sie durch
+    Id: 11
+    Name: 8 House Attack
+    Text: "Das M\xE4dchen ist v\xF6llig \xFCberrascht und greift verwirrt nach dir."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      NextStageId: 4
+      Text: Nahe Lebewesen erkennen.
     Id: 5
-    Name: You get help
-    Text: Nice for you
+    Name: '3 Choose '
+    Text: "Du f\xFChlst dich wie eine gro\xDFe Made. Und du entwickelst eine weitere
+      F\xE4higkeit."
   - Answers:
     - Conditions: []
-      Effects: []
-      NextStageId: 4
-      Text: text
-    Id: 2
-    Name: Nice conversation with Maurice
-    Text: Maurice is glad you did not punch him
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      NextStageId: 19
+      Text: "Du wanderst um nahe H\xE4user herum, greifst in die Fenster und f\xFCtterst
+        dich damit."
+    Id: 18
+    Name: 15 City Police
+    Text: Die anfahrenden Polizisten sind hilflos, du zerreisst sie und greifst die
+      Menschen darin einfach. Wenigstens Opfer, die nicht vor dir fliehen!
   - Answers:
     - Conditions: []
-      Effects: []
-      NextStageId: 4
-      Text: text
-    Id: 3
-    Name: Punching Maurice
-    Text: You punch Maurice
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      NextStageId: 6
+      Text: Folge dem Ameisenpfad zum Anfang, friss dabei so viele du kannst.
+    Id: 4
+    Name: 4 Grow
+    Text: "Du blickst \xFCber die Wiese hinaus und suchst neue Herausforderungen."
   - Answers:
     - Conditions:
-      - Operator: 3
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 3
+      NextStageId: 7
+      Text: "Du reisst mit deinen Kneifern um dich und verschlingst sie. Durch den
+        gro\xDFen Energiezufluss w\xE4chst du deutlich an, die Verletzungen verheilen
+        schneller als sie dir zugef\xFCgt werden k\xF6nnen."
+    Id: 6
+    Name: 5 Ants
+    Text: "Du sitzt am Fu\xDF des Ameisenhaufens. Die Ameisen erkennen dich als Gefahr
+      und beissen an dir herum."
+  - Answers:
+    - Conditions:
+      - Operator: 0
         ParameterId: 0
         Value: 0
       Effects:
       - Operator: 1
         ParameterId: 0
-        Value: 5
-      NextStageId: 7
-      Text: add5
-    Id: 8
-    Name: name
-    Text: text
-  - Answers:
-    - Conditions:
-      - Operator: 3
+        Value: 2
+      - Operator: 1
         ParameterId: 0
-        Value: 0
+        Value: 2
+      NextStageId: 21
+      Text: "Keine R\xFCcksicht. Alles vernichten!"
+    Id: 20
+    Name: 17 City Army
+    Text: "Die Fahrzeuge und Panzer sind f\xFCr dich nicht n\xE4hrreich, du zerreisst
+      sie statt dessen und greifst dir die kleinen Menschen daraus. Sie sind  nicht
+      mehr gro\xDF genug f\xFCr dich, um dich zufrieden zu stellen. Weitere Truppen
+      r\xFCcken an."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 16
+      Text: "Pausiere das Fressen f\xFCr einen Moment, um ein paar stra\xDFen Weiter
+        vollere Wege zu finden."
+    Id: 15
+    Name: 12 Suburb Rampage
+    Text: "Hilflose Menschen fliehen vor dir in Autos und H\xE4user, doch Glas und
+      Holz stoppen dich nicht. Du wirst gr\xF6\xDFer und gr\xF6\xDFer."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 10
+      Text: "Klettere an der K\xFCchenzeile hoch, geh in Deckung hinter einem Toaster."
+    Id: 9
+    Name: 7 House Kitchen
+    Text: "Du sitzt in den Scherben der T\xFCr. Das laute Klirren hat die Bewohner
+      bestimmt Alarmiert."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: -1
+      Text: "Kein R\xFCckzug! Friss sie!"
+    - Conditions: []
+      Effects: []
+      NextStageId: -1
+      Text: 'text '
+    Id: 21
+    Name: 18 Overwhelm
+    Text: "Die neuen Angreifer sind anders. Du verstehst nicht, was sie tun, aber
+      du f\xFChlst dich heiss. Ihre Waffen treffen deinen Panzer gar nicht. "
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 5
+      - Operator: 1
+        ParameterId: 0
+        Value: 5
+      NextStageId: 11
+      Text: Spring hinter dem Toaster hervor und auf ihren Kopf, greif an!
+    Id: 10
+    Name: 8 House Cover
+    Text: "Ein kleines M\xE4dchen kommt durch die T\xFCr, mit einem B\xE4ren in der
+      Hand. Sie bleibt vor den Scherben stehen und sieht sich verwirrt um."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 5
+      - Operator: 1
+        ParameterId: 0
+        Value: 5
+      NextStageId: 20
+      Text: "Greif sie aus der Luft und zerst\xF6re auch die weiteren anr\xFCckenden
+        Armee-Truppen."
+    Id: 19
+    Name: 16 City Defense
+    Text: "Du bist eine Weile mit deiner Aufgabe besch\xE4ftigt. Als du wieder aufmerksam
+      wirst, treffen dich Geschosse aus einem Helikopter. Du bist mitlerweile zu gro\xDF,
+      um dich daran zu st\xF6ren. Das Milit\xE4r greift ein!"
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 8
+      Text: "Du n\xE4herst dich dem gro\xDFen Haus in der Ferne."
+    Id: 7
+    Name: 5 Ants dead
+    Text: "Als du fertig bist, ist der Ameisenhaufen kein berg mehr, nur noch ein
+      H\xFCgel unter dir. Du verlierst das Interesse an ihnen."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      NextStageId: 2
+      Text: Finde hilflose Insekten, um sie zu fressen.
+    - Conditions: []
       Effects: []
       NextStageId: -1
       Text: text
-    Id: 10
-    Name: name
-    Text: text
+    Id: 1
+    Name: 1Start
+    Text: Du bist ein kleiner Wurm. Tu was mit deinem Leben.
   - Answers:
-    - Conditions:
-      - Operator: 3
-        ParameterId: 0
-        Value: 0
-      Effects:
-      - Operator: 0
-        ParameterId: 0
-        Value: -3
-      NextStageId: 10
-      Text: set -3
-    Id: 9
-    Name: name
-    Text: text
-  - Answers:
-    - Conditions:
-      - Operator: 0
-        ParameterId: 1
-        Value: 0
-      Effects: []
-      NextStageId: 5
-      Text: Ask Maurice for help
     - Conditions: []
-      Effects: []
-      NextStageId: 6
-      Text: Dont ask for help
-    Id: 4
-    Name: Next day
-    Text: You have that problem. Maurice can probably help
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      - Operator: 1
+        ParameterId: 0
+        Value: 15
+      NextStageId: 18
+      Text: "Lass deine Klauen und Panzer noch st\xE4rker wachsen. Zeit f\xFCr Kampf!"
+    Id: 17
+    Name: 14 City Attack
+    Text: "Du stopfst dir ganze Menschen in den Mund, alles was dir zu nahe kommt
+      oder deinen Schritten nicht entkommt, f\xE4llt dir zum Opfer. Sirenen erklingen."
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      NextStageId: 3
+      Text: "Warte auf Ameisen, friss sie wenn sie \xFCber dich klettern"
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      - Operator: 1
+        ParameterId: 0
+        Value: 1
+      NextStageId: 5
+      Text: "Friss ganze Bl\xE4tter."
+    Id: 2
+    Name: 2 Grow
+    Text: "Du frisst Blattl\xE4use von mehreren Bl\xE4ttern und f\xFChlst dich st\xE4rker
+      und schneller. Was nun?"
+  - Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 0
+        ParameterId: 0
+        Value: 1
+      NextStageId: 14
+      Text: "Entwickle Beine und einen Chitinpanzer, dann geh nach drau\xDFen."
+    Id: 13
+    Name: 10 House Emptied
+    Text: "Ein Hund und ein schlafender Mann haben dir nichts entgegen zu setzen.
+      Als du mit ihnen fertig bist, musst du dich ducken, um durch die T\xFCr zu passen."
   - Answers:
     - Conditions:
-      - Operator: 3
+      - Operator: 1
         ParameterId: 0
-        Value: 0
-      Effects:
-      - Operator: 2
-        ParameterId: 0
-        Value: 4
+        Value: 5
+      Effects: []
       NextStageId: 9
-      Text: subtract4
-    Id: 7
-    Name: name
-    Text: text
+      Text: Wirf dich gegen die Scheibe, bis sie platzt.
+    Id: 8
+    Name: 6 House Out
+    Text: "Du sitzt auf dem Balkon des Hauses. Eine Balkont\xFCr aus Glas ist im weg."
   FistStageId: 1
