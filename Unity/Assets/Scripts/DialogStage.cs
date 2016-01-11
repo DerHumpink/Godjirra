@@ -16,8 +16,8 @@ public class DialogStage
 {
 	public List<Answer> Answers = new List<Answer>();
 	public int Id = -1;
-	public string Name = "name";
-	public string Text = "text";
+	public string Name = "";
+	public string Text = "";
 }
 
 [Serializable]
@@ -26,7 +26,7 @@ public class Answer
 	public List<Condition> Conditions = new List<Condition>();
 	public List<Effect> Effects = new List<Effect>();
 	public int NextStageId = 0;
-	public string Text = "text";
+	public string Text = "";
 }
 
 [Serializable]
