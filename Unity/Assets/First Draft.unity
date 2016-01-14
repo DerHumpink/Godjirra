@@ -113,10 +113,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stage:
-    Answers: []
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 31
+      Text: "Du entwickelst verst\xE4ndnis f\xFCr ihre Sprache und begrenzte Stimmb\xE4nder"
     Id: 30
     Name: 8 Inside
-    Text: text
+    Text: "Du wirst auf den Boden gesetzt und lange untersucht. Das M\xE4dchen erkennt
+      zunehmend, dass du es verstehst und ungef\xE4hrlich bist."
 --- !u!4 &29390949
 Transform:
   m_ObjectHideFlags: 0
@@ -299,7 +304,7 @@ GameObject:
   - 4: {fileID: 49671945}
   - 114: {fileID: 49671944}
   m_Layer: 0
-  m_Name: name
+  m_Name: 4 Mind Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,8 +324,8 @@ MonoBehaviour:
   Stage:
     Answers: []
     Id: 25
-    Name: name
-    Text: text
+    Name: 4 Mind Control
+    Text: 
 --- !u!4 &49671945
 Transform:
   m_ObjectHideFlags: 0
@@ -328,11 +333,67 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 49671943}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.75, y: -29.79, z: 0}
+  m_LocalPosition: {x: 19.19, y: -35.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
+--- !u!1 &52993040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 52993042}
+  - 114: {fileID: 52993041}
+  m_Layer: 0
+  m_Name: 15 Science Office 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &52993041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52993040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 43
+      Text: "Du m\xF6chtest im geheimen zum Wohl der Menschen erforscht werden. Keine
+        Gefangenschaft, \xD6ffentlichkeit erst, wenn es Zeit ist."
+    - Conditions: []
+      Effects: []
+      NextStageId: 44
+      Text: "Im Austausch f\xFCr Forschungsrecht m\xF6chtest du Zugang zu besonderer
+        Nahrung haben, um dich entwickeln zu k\xF6nnen."
+    Id: 42
+    Name: 15 Science Office 2
+    Text: "Der Professor fasst sich bald wieder und l\xE4sst sich erkl\xE4ren, dass
+      du Gespr\xE4che verstehst. Mithilfe der Ja-Nein-Methode kommt ihr auf den Punkt:
+      Was soll er hierzu beitragen?"
+--- !u!4 &52993042
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52993040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.65, y: -25.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 41
 --- !u!1 &200005989
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +430,10 @@ MonoBehaviour:
         Value: 1
       NextStageId: 4
       Text: Kneifzangen!
+    - Conditions: []
+      Effects: []
+      NextStageId: 5
+      Text: Greifer und einen Plan, wie du vorgehen willst.
     Id: 3
     Name: 3 Choose
     Text: Dir wachsen kleine Beine. Was noch?
@@ -384,6 +449,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &207474193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 207474195}
+  - 114: {fileID: 207474194}
+  m_Layer: 0
+  m_Name: 13 Go into Hiding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &207474194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207474193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 39
+    Name: 13 Go into Hiding
+    Text: text
+--- !u!4 &207474195
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207474193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.72, y: -28.03, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+--- !u!1 &239967622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 239967624}
+  - 114: {fileID: 239967623}
+  m_Layer: 0
+  m_Name: 11 Kitchen Bread+Milk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &239967623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239967622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 35
+    Name: 11 Kitchen Bread+Milk
+    Text: text
+--- !u!4 &239967624
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 239967622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.73, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
 --- !u!1 &283324614
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +697,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!1 &362600619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 362600621}
+  - 114: {fileID: 362600620}
+  m_Layer: 0
+  m_Name: 17 Scientific Results
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &362600620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362600619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 46
+      Text: "...ausf\xFChrliche Videobeweise und Zellen zu hinterlassen, aber vor
+        Ver\xF6ffentlichung wieder unterzutauchen"
+    - Conditions: []
+      Effects: []
+      NextStageId: 47
+      Text: "...dich vor Publikum pr\xE4sentieren zu lassen und weiter zu helfen,
+        wenn deine Sicherheit gew\xE4hrleistet ist."
+    Id: 45
+    Name: 17 Scientific Results
+    Text: "Bei tierischen Intelligenztests sprengst du alle Skalen, du bist definitiv
+      nicht vom selben Evolution\xE4ren Baum wie alle anderen Lebewesen. Man kann
+      keine Limits f\xFCr deine M\xF6glichkeiten einsch\xE4tzen. Als das Projekt gen\xFCgend
+      klare Resultate hat, wird die Frage nach Ver\xF6ffentlichung relevant. Du entscheidest..."
+--- !u!4 &362600621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 362600619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 47.15, y: -24.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 44
 --- !u!1 &362955965
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +764,7 @@ GameObject:
   - 4: {fileID: 362955967}
   - 114: {fileID: 362955966}
   m_Layer: 0
-  m_Name: '3 Choose '
+  m_Name: 3 Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -574,16 +784,17 @@ MonoBehaviour:
   Stage:
     Answers:
     - Conditions: []
-      Effects:
-      - Operator: 1
-        ParameterId: 0
-        Value: 1
-      NextStageId: 4
-      Text: Nahe Lebewesen erkennen.
+      Effects: []
+      NextStageId: 52
+      Text: Dinge bauen willst
+    - Conditions: []
+      Effects: []
+      NextStageId: 53
+      Text: Schaden anrichten willst, ohne zu sehr aufzufallen.
     Id: 5
-    Name: '3 Choose '
-    Text: "Du f\xFChlst dich wie eine gro\xDFe Made. Und du entwickelst eine weitere
-      F\xE4higkeit."
+    Name: 3 Hands
+    Text: "Du hast gro\xDFe Pl\xE4ne, du m\xF6chtest Dinge bewegen. W\xE4hrend du
+      dich ern\xE4hrst und w\xE4chst, wird dir klar, dass du..."
 --- !u!4 &362955967
 Transform:
   m_ObjectHideFlags: 0
@@ -591,11 +802,55 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 362955965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.79, y: -9.12, z: 0}
+  m_LocalPosition: {x: 18.88, y: 3.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!1 &373578834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 373578836}
+  - 114: {fileID: 373578835}
+  m_Layer: 0
+  m_Name: 4 Shadowy?
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &373578835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373578834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 53
+    Name: 4 Shadowy?
+    Text: 
+--- !u!4 &373578836
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373578834}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.35, y: 2.52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 52
 --- !u!1 &407971203
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +957,145 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
+--- !u!1 &582013230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 582013232}
+  - 114: {fileID: 582013231}
+  m_Layer: 0
+  m_Name: 18 Science, Published
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &582013231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582013230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 47
+    Name: 18 Science, Published
+    Text: 
+--- !u!4 &582013232
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582013230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.26, y: -24.58, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 46
+--- !u!1 &621849199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 621849201}
+  - 114: {fileID: 621849200}
+  m_Layer: 0
+  m_Name: 11 Kitchen Energy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &621849200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621849199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 36
+    Name: 11 Kitchen Energy
+    Text: text
+--- !u!4 &621849201
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621849199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.78, y: -29.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 35
+--- !u!1 &664637672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 664637674}
+  - 114: {fileID: 664637673}
+  m_Layer: 0
+  m_Name: 9 Bonding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664637673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664637672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 32
+      Text: "...geheim gehalten werden m\xF6chtest, aber Nahrung brauchst"
+    Id: 31
+    Name: 9 Bonding
+    Text: "Als dein Kopf gr\xF6\xDFer wird, ist das M\xE4dchen zuerst besorgt, doch
+      du beruhigst sie mit einem wohlmeinenden gurren. Ihr etabliert ein Ja/Nein-System,
+      indem sie dir M\xF6glichkeiten anbietet, auf die du antworten kannst. Du stimmst
+      zu, dass du..."
+--- !u!4 &664637674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664637672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
 --- !u!1 &667777967
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +1204,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &854994939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 854994941}
+  - 114: {fileID: 854994940}
+  m_Layer: 0
+  m_Name: 13 Science
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &854994940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854994939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 41
+      Text: "Als ihr an B\xFCros mit geeigneten Namen vorbei geht, warnst du vor der
+        ersten Wahl aus einem Gef\xFChl. Beim zweiten scheint niemand anwesend. Erst
+        beim dritten B\xFCro bist du zufrieden. Ihr klopft und werdet eingelassen."
+    Id: 38
+    Name: 13 Science
+    Text: "Mit Hilfe des Internets und eines \xFCbergro\xDFen Rucksacks fahrt ihr
+      bald im Bus zur \xF6rtlichen Universit\xE4t. Deine Partnerin f\xE4llt zwar auf,
+      doch niemand sieht Grund dazu, sie zu stoppen. Ihr lasst euch zur biologischen
+      Fakult\xE4t f\xFChren. (Bild: Monster im Rucksack, schwarz rundherum, milder
+      glow, der Menschen-Pr\xE4senzen anzeigt?)"
+--- !u!4 &854994941
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 854994939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.65, y: -25.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 37
 --- !u!1 &857589084
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,6 +1363,113 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
+--- !u!1 &936864793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 936864795}
+  - 114: {fileID: 936864794}
+  m_Layer: 0
+  m_Name: 12 New Day
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936864794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936864793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions:
+      - Operator: 1
+        ParameterId: 3
+        Value: 9
+      Effects: []
+      NextStageId: 38
+      Text: en gebracht werden musst, einem Wissenschaftler.werden musst, einem Wissenschaftler.
+    - Conditions: []
+      Effects: []
+      NextStageId: 39
+      Text: '...Dass du unter Menschen nicht sicher bist und in der Wildnis untergebracht
+        werden musst.'
+    - Conditions: []
+      Effects: []
+      NextStageId: 40
+      Text: "...Dass du im Geheimen darauf vorbereitet werden solltest, dich der \xD6ffentlichkeit
+        zu zeigen."
+    Id: 37
+    Name: 12 New Day
+    Text: "Am n\xE4chsten Morgen stellt sich die Frage, was ihr nun tun wollt. Durch
+      eine Reihe genereller, dann exakterer Fragen, die du mit gurren oder brummen
+      beantwortest, entscheidet ihr..."
+--- !u!4 &936864795
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936864793}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 36.7, y: -26.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 36
+--- !u!1 &981445582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 981445584}
+  - 114: {fileID: 981445583}
+  m_Layer: 0
+  m_Name: 4 Constructomonster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &981445583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 981445582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 52
+    Name: 4 Constructomonster
+    Text: 
+--- !u!4 &981445584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 981445582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.39, y: 4.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 51
 --- !u!1 &986477963
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +1530,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+--- !u!1 &1039379446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1039379448}
+  - 114: {fileID: 1039379447}
+  m_Layer: 0
+  m_Name: 3 Stones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1039379447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039379446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 49
+      Text: "Als du ein paar M\xFCnzen im Gras findest, steigst du auf diese um."
+    Id: 48
+    Name: 3 Stones
+    Text: "Es ist anstrengend, aber aus den Steinen nimmst du energie, die du anders
+      wohl nicht finden kannst. Dein K\xF6rper entwickelt neue S\xE4uren, die deine
+      Ern\xE4hrung erleichtern, w\xE4hrend du w\xE4chst."
+--- !u!4 &1039379448
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1039379446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.98, y: -43.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 47
 --- !u!1 &1048631853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1787,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!1 &1172210808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1172210810}
+  - 114: {fileID: 1172210809}
+  m_Layer: 0
+  m_Name: 10 Kitchen Feeding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1172210809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172210808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 33
+      Text: "Alle Vorr\xE4te an Fleisch und Fisch, um st\xE4rker zu werden, beine
+        und Beisser zu entwickeln."
+    - Conditions: []
+      Effects: []
+      NextStageId: 34
+      Text: "Fr\xFCchte und Gem\xFCse, die dir Vitaminreich vorkommen. Du f\xFChlst
+        dich permanent wacher, deine Sinne werden sch\xE4rfer und deine Augen beginnen
+        zu gl\xFChen."
+    - Conditions: []
+      Effects: []
+      NextStageId: 35
+      Text: "Ein ganzes Brot, Milch und K\xE4se. Du w\xE4chst deutlich und deine Knochen
+        werden fester, du musst vom Tisch steigen, damit er nicht unter deinem Gewicht
+        leidet."
+    - Conditions: []
+      Effects: []
+      NextStageId: 36
+      Text: "Alle Vorr\xE4te an S\xFC\xDFigkeiten und Energydrinks. Dein Blutkreislauf
+        beginnt, von innen zu leuchten. Versehentlich tropft Fl\xFCssigkeit aus deinem
+        Mund auf den Tisch und \xE4tzt ihn auf. Du kannst S\xE4ure spucken."
+    Id: 32
+    Name: 10 Kitchen Feeding
+    Text: "Du l\xE4sst dich unter dem Pyjama in die K\xFCche tragen und auf den Tisch
+      setzen, dann wird dir der Inhalt des K\xFChlschranks und der K\xFCche angeboten.
+      Du frisst..."
+--- !u!4 &1172210810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172210808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.82, y: -28.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 31
+--- !u!1 &1244921178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1244921180}
+  - 114: {fileID: 1244921179}
+  m_Layer: 0
+  m_Name: 16 Scientific Progress
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1244921179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244921178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 45
+      Text: "Du kooperierst nach bestem Wissen und l\xE4sst dir Ergebnisse vortragen."
+    Id: 43
+    Name: 16 Scientific Progress
+    Text: "Ein Labor wird eingerichtet, Stillschweigen wird gesichert. Deine Begleiterin
+      besucht dich regelm\xE4\xDFig, w\xE4hrend du vermessen wirst, Zellen untersucht
+      werden und die Effekte von kleinen Mengen Nahrung ausprobiert werden. Man ist
+      bem\xFCht und gr\xF6\xDFtenteils Erfolgreich dabei, die Mengen so gering zu
+      halten, dass du nicht w\xE4chst."
+--- !u!4 &1244921180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244921178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.78, y: -24.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 42
 --- !u!1 &1282278349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,6 +1965,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+--- !u!1 &1317481983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1317481985}
+  - 114: {fileID: 1317481984}
+  m_Layer: 0
+  m_Name: 5 Spiderlegs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1317481984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317481983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 50
+    Name: 5 Spiderlegs
+    Text: 
+--- !u!4 &1317481985
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317481983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.96, y: -42.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 49
+--- !u!1 &1347757479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1347757481}
+  - 114: {fileID: 1347757480}
+  m_Layer: 0
+  m_Name: 5 Magnets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1347757480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347757479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 51
+    Name: 5 Magnets
+    Text: 
+--- !u!4 &1347757481
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347757479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.93, y: -43.88, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
 --- !u!1 &1357551251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +2086,11 @@ MonoBehaviour:
       Effects: []
       NextStageId: 23
       Text: "Friss ganze Bl\xE4tter, bis du dich deiner Situation gewachsen f\xFChlst."
+    - Conditions: []
+      Effects: []
+      NextStageId: 48
+      Text: Du findest kleine Steine und mineralien, an denen du eine Weile lutschen
+        musst, um sie zu verdauen.
     Id: 22
     Name: 2 Grow
     Text: "Du ern\xE4hrst dich m\xFChsam mit Grashalmen und f\xFChlst dich st\xE4rker
@@ -1288,6 +2107,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
+--- !u!1 &1426295350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1426295352}
+  - 114: {fileID: 1426295351}
+  m_Layer: 0
+  m_Name: 18 Science, Secrecy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1426295351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426295350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 46
+    Name: 18 Science, Secrecy
+    Text: 
+--- !u!4 &1426295352
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426295350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.25, y: -23.07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 45
 --- !u!1 &1457861969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,16 +2350,6 @@ MonoBehaviour:
         Value: 1
       NextStageId: 3
       Text: "Warte auf Ameisen, friss sie wenn sie \xFCber dich klettern"
-    - Conditions: []
-      Effects:
-      - Operator: 1
-        ParameterId: 0
-        Value: 1
-      - Operator: 1
-        ParameterId: 0
-        Value: 1
-      NextStageId: 5
-      Text: "Friss ganze Bl\xE4tter."
     Id: 2
     Name: 2 Grow
     Text: "Du frisst Blattl\xE4use von mehreren Bl\xE4ttern und f\xFChlst dich st\xE4rker
@@ -1513,6 +2366,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &1698503010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1698503012}
+  - 114: {fileID: 1698503011}
+  m_Layer: 0
+  m_Name: 11 Kitchen Meat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1698503011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698503010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 33
+    Name: 11 Kitchen Meat
+    Text: text
+--- !u!4 &1698503012
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698503010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.73, y: -25.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
 --- !u!1 &1714821688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +2513,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &1770391535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1770391537}
+  - 114: {fileID: 1770391536}
+  m_Layer: 0
+  m_Name: 11 Kitchen Vitamins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1770391536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770391535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects:
+      - Operator: 1
+        ParameterId: 3
+        Value: 10
+      NextStageId: 37
+      Text: "Du kletterst wieder zu ihr und l\xE4sst dich zur\xFCck in ihr Zimmer
+        tragen. Ihr schlaft gemeinsam ein, dein K\xF6rper bleibt unter ihrer Decke
+        versteckt, um nicht aufzufallen."
+    Id: 34
+    Name: 11 Kitchen Vitamins
+    Text: "Du verstehst auf einmal besser, was um dich herum vor sich geht. Deine
+      Begleiterin f\xFChlt sich besorgt ob deiner Ver\xE4nderungen, hat dich aber
+      ins Herz geschlossen. All das wird dir nur durch ihren Anblick klar. Ausserdem
+      ist sie... m\xFCde."
+--- !u!4 &1770391537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770391535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.7, y: -26.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
 --- !u!1 &1778344236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,3 +2619,198 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
+--- !u!1 &1848535056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1848535058}
+  - 114: {fileID: 1848535057}
+  m_Layer: 0
+  m_Name: 16 Scientific Growth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1848535057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848535056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 44
+    Name: 16 Scientific Growth
+    Text: 
+--- !u!4 &1848535058
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848535056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.76, y: -25.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 43
+--- !u!1 &1879197022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1879197024}
+  - 114: {fileID: 1879197023}
+  m_Layer: 0
+  m_Name: 14 Science Office
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1879197023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879197022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 42
+      Text: Du wartest den Schockmoment ab, kletterst dann mit Hilfe heraus und setzt
+        dich geduldig auf den Tisch.
+    Id: 41
+    Name: 14 Science Office
+    Text: "Es folgt ein z\xF6gerliches Gespr\xE4ch, in dem deine Begleiterin das Wissen
+      ihres Gegen\xFCbers genauso ertastet wie sein Versprechen, geheim zu halten
+      was sie dabei hat. Erst, als die T\xFCr abgeschlossen und das Fenster verhangen
+      ist, hebt sie ihren Rucksack auf den Scho\xDF und l\xE4sst dich herausblicken."
+--- !u!4 &1879197024
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879197022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 40.65, y: -25.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 40
+--- !u!1 &1995082842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1995082844}
+  - 114: {fileID: 1995082843}
+  m_Layer: 0
+  m_Name: 13 Go Public
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1995082843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995082842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers: []
+    Id: 40
+    Name: 13 Go Public
+    Text: text
+--- !u!4 &1995082844
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995082842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.72, y: -26.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 39
+--- !u!1 &2056609457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2056609459}
+  - 114: {fileID: 2056609458}
+  m_Layer: 0
+  m_Name: 4 Money
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2056609458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056609457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9ff4220f85dd043a2b9d760ed3b875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stage:
+    Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 50
+      Text: "Man\xF6vrierf\xE4hige Beine zum Klettern haben"
+    - Conditions: []
+      Effects: []
+      NextStageId: 51
+      Text: "Ein Gesp\xFCr f\xFCr weitere Energien dieser Art finden. Du musst magnetismus
+        messen k\xF6nnen!"
+    Id: 49
+    Name: 4 Money
+    Text: "Dein K\xF6rper beginnt, metallisch zu schimmern und fester zu werden. Anstatt
+      Muskelmasse und Fett scheinst du ein Aussenskelett aufzubauen. Ausserdem m\xF6chtest
+      du..."
+--- !u!4 &2056609459
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056609457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.98, y: -43.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 48

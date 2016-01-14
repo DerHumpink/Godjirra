@@ -14,6 +14,15 @@ MonoBehaviour:
   Stages:
   - Answers:
     - Conditions: []
+      Effects: []
+      NextStageId: 31
+      Text: "Du entwickelst verst\xE4ndnis f\xFCr ihre Sprache und begrenzte Stimmb\xE4nder"
+    Id: 30
+    Name: 8 Inside
+    Text: "Du wirst auf den Boden gesetzt und lange untersucht. Das M\xE4dchen erkennt
+      zunehmend, dass du es verstehst und ungef\xE4hrlich bist."
+  - Answers:
+    - Conditions: []
       Effects:
       - Operator: 1
         ParameterId: 0
@@ -29,6 +38,16 @@ MonoBehaviour:
       mit hell erleuchteten gro\xDFen Scheiben und vielen Passanten."
   - Answers:
     - Conditions: []
+      Effects: []
+      NextStageId: 29
+      Text: "Du versuchst, ungef\xE4hrlich auszusehen und zu kommunizieren, indem
+        du auf den Hinterbeinen hin und her wackelst."
+    Id: 28
+    Name: 6 Window
+    Text: "Du landest schwer, erhebst dich und st\xF6\xDFt gegen das Fenster. Das
+      Klacken weckt die Bewohnerin, die verwirrt ans Fenster tritt."
+  - Answers:
+    - Conditions: []
       Effects:
       - Operator: 1
         ParameterId: 0
@@ -42,6 +61,10 @@ MonoBehaviour:
     Name: 9 House Victory
     Text: "Du frisst dich von oben bis unten durch sie durch und l\xE4sst nur Kleidung
       \xFCbrig. Als du fertig bist, bist du gr\xF6\xDFer als der K\xFCchentisch."
+  - Answers: []
+    Id: 25
+    Name: name
+    Text: text
   - Answers:
     - Conditions: []
       Effects:
@@ -53,6 +76,21 @@ MonoBehaviour:
     Id: 3
     Name: 3 Choose
     Text: Dir wachsen kleine Beine. Was noch?
+  - Answers: []
+    Id: 35
+    Name: 11 Kitchen Bread+Milk
+    Text: text
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 27
+      Text: "Du m\xF6chtest dies besser verstehen, dein Gehirn muss mehr wachsen."
+    Id: 26
+    Name: 4 Tree
+    Text: "Auf dem Weg nach oben begegnest du einem Eichh\xF6rnchen, dass immer kleiner
+      zu werden scheint, doch du bel\xE4stigst es nicht weiter. An einem Ast angekommen
+      erkennst du, dass die Wand neben dir nicht nur ein Hindernis ist, sondern einen
+      Eingang hat."
   - Answers:
     - Conditions: []
       Effects:
@@ -96,6 +134,16 @@ MonoBehaviour:
       F\xE4higkeit."
   - Answers:
     - Conditions: []
+      Effects: []
+      NextStageId: 30
+      Text: "Du wartest geduldig und streckst dich ihr entgegen. Du bleibst behutsam
+        und zeigst intelligenz, wann m\xF6glich."
+    Id: 29
+    Name: 7 Open
+    Text: "Das M\xE4dchen ist verwirrt, aber nicht verschreckt. Sie \xF6ffnet das
+      Fenster einen Spalt weit."
+  - Answers:
+    - Conditions: []
       Effects:
       - Operator: 1
         ParameterId: 0
@@ -110,6 +158,21 @@ MonoBehaviour:
     Name: 15 City Police
     Text: Die anfahrenden Polizisten sind hilflos, du zerreisst sie und greifst die
       Menschen darin einfach. Wenigstens Opfer, die nicht vor dir fliehen!
+  - Answers: []
+    Id: 36
+    Name: 11 Kitchen Energy
+    Text: text
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 32
+      Text: "...geheim gehalten werden m\xF6chtest, aber Nahrung brauchst"
+    Id: 31
+    Name: 9 Bonding
+    Text: "Als dein Kopf gr\xF6\xDFer wird, ist das M\xE4dchen zuerst besorgt, doch
+      du beruhigst sie mit einem wohlmeinenden gurren. Ihr etabliert ein Ja/Nein-System,
+      indem sie dir M\xF6glichkeiten anbietet, auf die du antworten kannst. Du stimmst
+      zu, dass du..."
   - Answers:
     - Conditions: []
       Effects:
@@ -139,8 +202,37 @@ MonoBehaviour:
     Text: "Du sitzt am Fu\xDF des Ameisenhaufens. Die Ameisen erkennen dich als Gefahr
       und beissen an dir herum."
   - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 28
+      Text: Lass dich von einem hohen Ast auf die Fensterbank fallen und versuch,
+        dich bemerkbar zu machen.
+    Id: 27
+    Name: 5 Up Tree
+    Text: "Im Inneren sind Dinge, die nicht gewachsen sind, und ein gro\xDFes liegendes
+      Tier. Du frisst dich weiter am Baum hoch, um f\xFCr eine weitere Entwicklung
+      bereit zu sein."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 24
+      Text: "Du m\xF6chtest klarer denken und sehen k\xF6nnen!"
+    - Conditions: []
+      Effects: []
+      NextStageId: 25
+      Text: "Du m\xF6chtest die Tiere um dich herum Leiten k\xF6nnen."
+    Id: 23
+    Name: 3 Grass
+    Text: "Du grast den Bereich um dich ab, bis nur noch trockener Boden \xFCbrig
+      bleibt. Dabei wird dir klar, dass du einfluss darauf haben kannst, was du werden
+      m\xF6chtest."
+  - Answers: []
+    Id: 37
+    Name: 12 New Day
+    Text: "Am n\xE4chsten Morgen stellt sich die Frage, was ihr nun tun wollt."
+  - Answers:
     - Conditions:
-      - Operator: 0
+      - Operator: 1
         ParameterId: 0
         Value: 0
       Effects:
@@ -207,6 +299,35 @@ MonoBehaviour:
       Hand. Sie bleibt vor den Scherben stehen und sieht sich verwirrt um."
   - Answers:
     - Conditions: []
+      Effects: []
+      NextStageId: 33
+      Text: "Alle Vorr\xE4te an Fleisch und Fisch, um st\xE4rker zu werden, beine
+        und Beisser zu entwickeln."
+    - Conditions: []
+      Effects: []
+      NextStageId: 34
+      Text: "Fr\xFCchte und Gem\xFCse, die dir Vitaminreich vorkommen. Du f\xFChlst
+        dich permanent wacher, deine Sinne werden sch\xE4rfer und deine Augen beginnen
+        zu gl\xFChen."
+    - Conditions: []
+      Effects: []
+      NextStageId: 35
+      Text: "Ein ganzes Brot, Milch und K\xE4se. Du w\xE4chst deutlich und deine Knochen
+        werden fester, du musst vom Tisch steigen, damit er nicht unter deinem Gewicht
+        leidet."
+    - Conditions: []
+      Effects: []
+      NextStageId: 36
+      Text: "Alle Vorr\xE4te an S\xFC\xDFigkeiten und Energydrinks. Dein Blutkreislauf
+        beginnt, von innen zu leuchten. Versehentlich tropft Fl\xFCssigkeit aus deinem
+        Mund auf den Tisch und \xE4tzt ihn auf. Du kannst S\xE4ure spucken."
+    Id: 32
+    Name: 10 Kitchen Feeding
+    Text: "Du l\xE4sst dich unter dem Pyjama in die K\xFCche tragen und auf den Tisch
+      setzen, dann wird dir der Inhalt des K\xFChlschranks und der K\xFCche angeboten.
+      Du frisst..."
+  - Answers:
+    - Conditions: []
       Effects:
       - Operator: 1
         ParameterId: 0
@@ -222,6 +343,15 @@ MonoBehaviour:
     Text: "Du bist eine Weile mit deiner Aufgabe besch\xE4ftigt. Als du wieder aufmerksam
       wirst, treffen dich Geschosse aus einem Helikopter. Du bist mitlerweile zu gro\xDF,
       um dich daran zu st\xF6ren. Das Milit\xE4r greift ein!"
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 23
+      Text: "Friss ganze Bl\xE4tter, bis du dich deiner Situation gewachsen f\xFChlst."
+    Id: 22
+    Name: 2 Grow
+    Text: "Du ern\xE4hrst dich m\xFChsam mit Grashalmen und f\xFChlst dich st\xE4rker
+      und gr\xF6\xDFer."
   - Answers:
     - Conditions: []
       Effects: []
@@ -241,11 +371,12 @@ MonoBehaviour:
       Text: Finde hilflose Insekten, um sie zu fressen.
     - Conditions: []
       Effects: []
-      NextStageId: -1
-      Text: text
+      NextStageId: 22
+      Text: Kaue am Rand von Grashalmen.
     Id: 1
     Name: 1Start
-    Text: Du bist ein kleiner Wurm. Tu was mit deinem Leben.
+    Text: Du bist ein kleiner Wurm. Du musst fressen, um zu wachsen, und wirst dabei
+      Eigenschaften deines Futters annehmen.
   - Answers:
     - Conditions: []
       Effects:
@@ -286,6 +417,10 @@ MonoBehaviour:
     Name: 2 Grow
     Text: "Du frisst Blattl\xE4use von mehreren Bl\xE4ttern und f\xFChlst dich st\xE4rker
       und schneller. Was nun?"
+  - Answers: []
+    Id: 33
+    Name: 11 Kitchen Meat
+    Text: text
   - Answers:
     - Conditions: []
       Effects:
@@ -309,4 +444,27 @@ MonoBehaviour:
     Id: 8
     Name: 6 House Out
     Text: "Du sitzt auf dem Balkon des Hauses. Eine Balkont\xFCr aus Glas ist im weg."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 37
+      Text: "Du kletterst wieder zu ihr und l\xE4sst dich zur\xFCck in ihr Zimmer
+        tragen. Ihr schlaft gemeinsam ein, dein K\xF6rper bleibt unter ihrer Decke
+        versteckt, um nicht aufzufallen."
+    Id: 34
+    Name: 11 Kitchen Vitamins
+    Text: "Du verstehst auf einmal besser, was um dich herum vor sich geht. Deine
+      Begleiterin f\xFChlt sich besorgt ob deiner Ver\xE4nderungen, hat dich aber
+      ins Herz geschlossen. All das wird dir nur durch ihren Anblick klar. Ausserdem
+      ist sie... m\xFCde."
+  - Answers:
+    - Conditions: []
+      Effects: []
+      NextStageId: 26
+      Text: "Krieche auf den Baum in der N\xE4he, ern\xE4hre dich dabei von Rinde
+        und Bl\xE4ttern"
+    Id: 24
+    Name: 4 Garden
+    Text: "Dein Blick auf die Welt sch\xE4rft sich. Dir wird klar, dass um dich herum
+      eine viel gr\xF6\xDFere Natur wartet, die du erobern kannst."
   FistStageId: 1
