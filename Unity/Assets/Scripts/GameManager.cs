@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -9,10 +10,13 @@ public class GameManager : Singleton<GameManager>
 
 	[SerializeField] private Text _headerText;
 	[SerializeField] private Text _storyText;
+	private DialogStage _currentStage;
 
+	public List<DialogStage> PreviousStages { get; private set; }
 
 	private void Start()
 	{
+		PreviousStages=new List<DialogStage>();
 		SetStage(GetStageById(1));
 	}
 
@@ -33,6 +37,7 @@ public class GameManager : Singleton<GameManager>
 			answerButton.SetParent(_answersLayoutGroup.transform);
 			answerButton.GetComponent<AnswerButton>().SetAnswerData(answer);
 		}
+		_currentStage = newStage;
 	}
 
 	private DialogStage GetStageById(int id)
@@ -42,6 +47,14 @@ public class GameManager : Singleton<GameManager>
 
 	public void OnAnswerSelected(Answer answer)
 	{
+		PreviousStages.Add(_currentStage);
 		SetStage(GetStageById(answer.NextStageId));
+	}
+
+	public void LoadPreviousScene()
+	{
+		if(PreviousStages.Count<=0)return;
+		PreviousStages.Remove(_currentStage);
+		SetStage(PreviousStages.Last());
 	}
 }
